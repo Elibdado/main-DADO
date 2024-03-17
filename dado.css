@@ -1,0 +1,438 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-repeat: no-repeat;
+  background: rgb(65, 142, 178);
+  background: url(bookshelf.png);   
+}
+
+header {
+  background-color: #65451F;
+  color: #000000;
+  padding: 0.5px;
+  text-indent: 23px;  
+}
+
+nav {
+  background-color: #765827;
+  padding: 1px;
+  text-indent: 10px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: dotted;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #9d9d9d;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.card { /* ito yung sa may div container*/
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000000;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 44px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 750px;
+  margin: 0 auto;
+ 
+}
+
+.card h2 {
+  color: #000000;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 8px 12px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: 15px;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #65451F;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-indent: 10px; 
+  color: #000000;
+  padding: 0.5px;
+  text-indent: 23px; 
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {  
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 3px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: 17px;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:  #65451F;
+}
+
+.dropdown-aboutus {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-aboutus-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-indent: 23px;
+}
+
+.dropdown-aboutus-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-aboutus-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown-aboutus:hover .dropdown-aboutus-content {
+  display: block;
+}
+
+.dropdown-aboutus .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 3px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-aboutus:hover .dropbtn {
+  background-color: #65451F;
+}
+
+#searchResult {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20px;
+}
+
+
+#searchResults a {
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+color: rgb(188, 37, 37);
+background-color: beige;
+}
+
+#searchResults li {
+width: 300px; 
+margin-left: 37%;
+padding: 10px;
+border: 1px solid #000000;
+transition: transform 0.3s;
+color: #ffffff;
+margin-bottom: 10px; 
+background-color: beige;
+border-radius: 14px;
+}
+
+#searchResults li:hover {
+transform: scale(1.05);
+}
+
+#biblioGrid {
+width: 30%;
+margin-left: 37%;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 15px;
+padding: 2px;
+border: 2px solid #000000;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+font-family: 'Times New Roman', Times, serif;
+color: rgb(5, 5, 5);
+font-weight: 900;
+background-color: beige;
+border-radius: 14px;
+}
+
+#biblioGrid div {
+padding: 2px;
+}
+
+/* Center the search input and button */
+#homePage {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+#backButton {
+background-color: #765827; 
+border: none;
+margin-left: 37%;
+color: white;
+padding: 7px 7px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-top: 5px;
+cursor: pointer;
+border-radius: 8px;
+position: relative;
+}
+
+/* Adjust the distance from the top */
+.search-container {
+position: absolute; 
+padding: 2%;
+top: 13px; 
+right: 20px;   
+}
+
+.search-input {
+padding: 10px; 
+border-radius: 5px; 
+border: 1px solid #ccc; 
+}
+
+.search-btn {
+background-color: #C38154;
+color: #fff; 
+border: none; 
+padding: 10px; 
+border-radius: 5px; 
+cursor: pointer; 
+}
+
+#definition-box {
+margin-bottom: 20px; 
+background-color: #f0f0f0;
+}
+
+#resultsPage {
+display: none; 
+background-color: none; 
+}
+
+#bibliographic-data {
+margin-top: 20px; 
+background-color: #f0f0f0;   
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh; /* Ensure the container takes up at least the full height of the viewport */
+}
+
+
+@media only screen and (max-width: 1200px) {
+/* Adjustments for large laptops and desktops */
+.image-container {
+  margin-right: 10%;
+}
+
+
+#backButton {
+  margin-left: 10%;
+}
+
+#searchResults li,
+#biblioGrid {
+  margin-left: 10%;
+  width: 80%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+/* Adjustments for landscape tablets */
+#searchResults li,
+#biblioGrid {
+  width: 100%;
+  margin-left: 0;
+}
+
+#backButton {
+  margin-left: 10%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+/* Adjustments for landscape tablets */
+.search-container {
+  width: 50%;
+  margin-left: 0;
+}
+}
+@media only screen and (max-width: 600px) {
+/* Adjustments for small devices (e.g., portrait tablets and large phones) */
+#searchResults li,
+#biblioGrid {
+  width: 100%;
+  margin-left: 0;
+}
+
+#backButton {
+  margin-left: 10%;
+}
+}
+
+@media only screen and (max-width: 600px) {
+/* Adjustments for small devices (e.g., portrait tablets and large phones) */
+.search-container {
+  width: 50%;
+  margin-left: 0;
+}
+
+.search-btn {
+  padding: 5px;
+  margin-top: 5px;
+}
+.search-input {
+  padding: 4px;
+  width: 100px;
+  margin-left: 40px;
+}
+.dropdown .dropbtn {
+  padding: 0.2 ;
+}
+
+}
+
+@media only screen and (max-width: 1200px) {
+/* Adjustments for large laptops and desktops */
+.Math, .Math-2, .Math-3, .Math-4, .Math-5, .Math-6 {
+  width: 45%; /* Adjust width to fit within the screen */
+}
+}
+
+@media only screen and (max-width: 768px) {
+/* Adjustments for landscape tablets */
+.Math, .Math-2, .Math-3, .Math-4, .Math-5, .Math-6 {
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 20%; /* Adjust left position to center */
+}
+}
+
+@media only screen and (max-width: 600px) {
+/* Adjustments for small devices (e.g., portrait tablets and large phones) */
+.Math {
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 50%; /* Adjust left position to center */
+  top: 70%; /* Adjust top position */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+
+.Math-2 {
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 50%; /* Adjust left position to center */
+  top: 108%; /* Adjust top position */
+  transform: translate(-50%, -50%);
+}
+
+.Math-3 {
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 50%; /* Adjust left position to center */
+  top: 145%; /* Adjust top position */
+  transform: translate(-50%, -50%);
+}
+
+.Math-4 {
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 50%; /* Adjust left position to center */
+  top: 183%; /* Adjust top position */
+  transform: translate(-50%, -50%);
+}
+
+.Math-5 {
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 50%; /* Adjust left position to center */
+  top: 223%; /* Adjust top position */
+  transform: translate(-50%, -50%);
+}
+
+
+.Math-6 {
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 50%; /* Adjust left position to center */
+  top: 262%; /* Adjust top position */
+  transform: translate(-50%, -50%);
+}
+
+.Math-7{
+  width: 60%; /* Adjust width to fit within the screen */
+  left: 50%; /* Adjust left position to center */
+  top: 300%; /* Adjust top position */
+  transform: translate(-50%, -50%);
+}
+
+}
+
