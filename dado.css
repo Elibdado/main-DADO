@@ -367,6 +367,31 @@ min-height: 100vh; /* Ensure the container takes up at least the full height of 
 
 }
 
+@media screen and (max-width: 600px) {
+  /* Adjustments for small devices (e.g., portrait tablets and large phones) */
+  .search-container {
+    width: 50%;
+    margin-left: 0;
+  }
+  .search-btn {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .search-input {
+    padding: 4px;
+    width: 100px;
+    margin-left: 40px;
+  }
+  .dropdown .dropbtn {
+    padding: 5px;
+    float: right;
+  }
+  .nav {
+    margin-right: 0; /* Reset margin-right */
+    float: right; /* Move navigation bar to the right */
+  }
+}
+
 @media only screen and (max-width: 1200px) {
 /* Adjustments for large laptops and desktops */
 .Math, .Math-2, .Math-3, .Math-4, .Math-5, .Math-6 {
