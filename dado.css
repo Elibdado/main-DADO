@@ -117,11 +117,11 @@ main {
   border: none;
   outline: none;
   color: rgb(0, 0, 0);
-  padding: 3px;
+  padding: 0.08px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-  font-size: 17px;
+  font-size: 15px;
   
 }
 
@@ -160,7 +160,7 @@ main {
 }
 
 .dropdown-aboutus .dropbtn {
-  font-size: 17px;
+  font-size: 14px;
   border: none;
   outline: none;
   color: rgb(0, 0, 0);
@@ -340,6 +340,30 @@ min-height: 100vh; /* Ensure the container takes up at least the full height of 
   margin-left: 0;
 }
 
+@media screen and (max-width: 600px) {
+  /* Adjustments for small devices (e.g., portrait tablets and large phones) */
+  .search-container {
+    width: 50%;
+    margin-left: 0;
+  }
+  .search-btn {
+    padding: 5px;
+    margin-top: 5px;
+  }
+  .search-input {
+    padding: 4px;
+    width: 100px;
+    margin-left: 40px;
+  }
+  .dropdown .dropbtn {
+    padding: 0.08px;
+  }
+  .nav {
+    margin-right: 0; /* Reset margin-right */
+    float: right; /* Move navigation bar to the right */
+  }
+}
+
 #backButton {
   margin-left: 10%;
 }
@@ -365,31 +389,6 @@ min-height: 100vh; /* Ensure the container takes up at least the full height of 
   padding: 0.2 ;
 }
 
-}
-
-@media screen and (max-width: 600px) {
-  /* Adjustments for small devices (e.g., portrait tablets and large phones) */
-  .search-container {
-    width: 50%;
-    margin-left: 0;
-  }
-  .search-btn {
-    padding: 5px;
-    margin-top: 5px;
-  }
-  .search-input {
-    padding: 4px;
-    width: 100px;
-    margin-left: 40px;
-  }
-  .dropdown .dropbtn {
-    padding: 5px;
-    float: right;
-  }
-  .nav {
-    margin-right: 0; /* Reset margin-right */
-    float: right; /* Move navigation bar to the right */
-  }
 }
 
 @media only screen and (max-width: 1200px) {
